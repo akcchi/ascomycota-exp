@@ -23,10 +23,10 @@ Zero-pad (where necessary) sequences to the specified length for the type of reg
 Truncate (where necessary) sequences to the specified length for the type of regulatory region: 1000 bp (promoter region), 300 bp (5' untranslated region), 350 bp (3' untranslated region), or 500 bp (terminator region). Upstream sequence is removed from the promoter and 5' untranslated regions, while downstream sequence is removed from the terminator and 3' untranslated regions. 
 
 ### get_gene_transcript_names.sh
-For each genome, find the corresponding transcript name for every given gene name. This is needed as the FASTA files containing promoter or terminator regions only contain the gene name in headers, not the transcript name (see [extract_reg_regions.sh](#extract_reg_regions.sh) outputs). For each genome, outputs one plaintext file for each of the promoter and terminator regions.
+For each genome, find the corresponding transcript name for every given gene name. This is needed as the FASTA files containing promoter or terminator regions only contain the gene name in headers, not the transcript name (see [extract_reg_regions.sh](#extract_reg_regionssh) outputs). For each genome, outputs one plaintext file for each of the promoter and terminator regions.
 
 ### gene_to_transcript_names.py
-For all of the promoter and terminator region FASTA files, use the [previously generated files](#get_gene_transcript_names.sh) to replace all gene names in FASTA headers with their corresponding transcript names.
+For all of the promoter and terminator region FASTA files, use the [previously generated files](#get_gene_transcript_namessh) to replace all gene names in FASTA headers with their corresponding transcript names.
 
 ### get_reg_set.sh
 For each genome, get a list of transcript names with a complete set of the four regulatory regions (not all transcripts have these regions annotated in the GFF file): promoter region, 5' untranslated region, 3' untranslated region, and terminator region.
