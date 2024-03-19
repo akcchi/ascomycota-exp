@@ -1,4 +1,4 @@
-Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fungi (Ascomycota) genomes into input datasets for use with the neural network model by Zrimec et al.
+Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fungi (Ascomycota) genomes into input datasets for use with the neural network model published by [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4)
 
 ## Dependencies
 See conda environment.yml file.
