@@ -1,4 +1,3 @@
-# ascomycota-expression
 Repository containing scripts used in a final year research project (January to April 2024) conducted as part of the BSc Biomedical Science programme at KCL.
 
 ## Description
