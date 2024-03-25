@@ -32,7 +32,7 @@ For all of the promoter and terminator region FASTA files, use the [previously g
 For each genome, get a list of transcript names with a complete set of the four regulatory regions (not all transcripts have these regions annotated in the GFF file): promoter region, 5' untranslated region, 3' untranslated region, and terminator region.
 
 ### get_gfp_variables.py
-Calculate the following variables for the coding sequence (CDS) of enhanced GFP (sequence supplied via a FASTA file): length, GC content at codon positions 1/2/3, and codon usage frequencies. This script uses some code snippets by Zrimec et al. shared via personal correspondence; see code comments for specific acknowledgments. 
+Calculate the following variables for the coding sequence (CDS) of enhanced GFP (sequence supplied via a FASTA file): length, GC content at codon positions 1/2/3, and codon usage frequencies. This script uses some code snippets by Zrimec et al.; see code comments for specific acknowledgments. 
 
 ### assemble_npz.py
-For each genome, generate a .npz file containing an input dataset in the required format/dimensions for the deep learning model. Each dataset includes: one-hot encoded 2150 bp regulatory sequence, as well as an additional 72 variables (as outlined in [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4); see Methods section). This script uses some code snippets by Zrimec et al. shared via personal correspondence; see code comments for specific acknowledgments.
+For each genome, generate a .npz file containing an input dataset in the required format/dimensions for the deep learning model. Each dataset includes: one-hot encoded 2150 bp regulatory sequence, as well as an additional 72 variables (as outlined in [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4); see Methods section). This script uses some code snippets by Zrimec et al.; see code comments for specific acknowledgments.
