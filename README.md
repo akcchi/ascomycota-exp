@@ -1,4 +1,4 @@
-Repository containing scripts used in a final year research project (January to April 2024) conducted as part of the BSc Biomedical Science programme at KCL.
+Repository containing scripts used in a final year research project (January to March 2024) conducted as part of the BSc Biomedical Science programme at KCL.
 
 ## Description
 This repository is intended as supplementary information for the project write-up.
