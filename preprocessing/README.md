@@ -1,7 +1,7 @@
 Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fungi (Ascomycota) genomes into input datasets for use with the _Saccharomyces cerevisiae_ expression neural network model published by [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4)
 
 ## Dependencies
-See conda environment.yml file.
+See conda [environment.yml](/preprocessing/environment.yml) file.
 
 ## Usage and order
 It is assumed that FASTA files and corresponding GFF files have already been retrieved for each genome.<br>
@@ -33,6 +33,9 @@ For each genome, get a list of transcript names with a complete set of the four 
 
 ### get_gfp_variables.py
 Calculate the following variables for the coding sequence (CDS) of enhanced GFP (sequence supplied via a FASTA file): length, GC content at codon positions 1/2/3, and codon usage frequencies. This script uses some code snippets by Zrimec et al.; see code comments for specific acknowledgments. 
+
+### replace_with_GFP.py
+Replace the following CDS variables for the _S. cerevisiae_ test dataset with that of EGFP: length of CDS, GC content at codon positions 1/2/3, codon usage frequencies. Yeast test dataset previously extracted from [Zenodo repository](https://doi.org/10.5281/zenodo.3905252) published by Jan Zrimec (filename: scerevisiae.rsd1.lmbda_22.npz).
 
 ### assemble_npz.py
 For each genome, generate a .npz file containing an input dataset in the required format/dimensions for the deep learning model. Each dataset includes: one-hot encoded 2150 bp regulatory sequence, as well as an additional 72 variables (as outlined in [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4); see Methods section). This script uses some code snippets by Zrimec et al.; see code comments for specific acknowledgments.
