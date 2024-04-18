@@ -7,3 +7,4 @@ Uses the _Saccharomyces cerevisiae_ expression neural network model published by
 move the contents of the [Zenodo repository](https://doi.org/10.5281/zenodo.3905252) by Jan Zrimec into a directory named "data".
 
 # Dependencies
+See conda [environment.yml](./predictions/environment.yml) file.
