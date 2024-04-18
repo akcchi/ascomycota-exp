@@ -1,9 +1,9 @@
 Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fungi (Ascomycota) genomes into input datasets for use with the _Saccharomyces cerevisiae_ expression neural network model published by [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4)
 
-## Dependencies
+# Dependencies
 See conda [environment.yml](/preprocessing/environment.yml) file.
 
-## Usage and order
+# Usage and order
 It is assumed that FASTA files and corresponding GFF files have already been retrieved for each genome.<br>
 Rename file/directory names in scripts as appropriate.
 
