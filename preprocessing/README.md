@@ -4,7 +4,7 @@ Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fun
 See conda [environment.yml](/preprocessing/environment.yml) file.
 
 # Usage and order
-It is assumed that FASTA files and corresponding GFF files have already been retrieved for each genome.<br>
+It is assumed that FASTA files and corresponding GFF files have already been retrieved for each genome. See [ascomycota_genomes.tsv](/preprocessing/ascomycota_genomes.tsv) for the list of genomes and links to exact files used in this project.<br>
 Rename file/directory names in scripts as appropriate.
 
 ### extract_reg_regions.sh
