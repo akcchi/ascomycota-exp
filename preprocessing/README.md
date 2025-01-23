@@ -1,4 +1,9 @@
-Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fungi (Ascomycota) genomes into input datasets for use with the _Saccharomyces cerevisiae_ expression neural network model published by [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4)
+<p align="center">
+  <img src=https://github.com/akcchi/ascomycota-exp/blob/main/figs/preprocessing_flowchart.jpg alt="flowchart describing preprocessing steps" width="600">
+</p>
+<p>
+  Mixture of Bash and Python scripts to preprocess the nucleotide sequences of fungi (Ascomycota) genomes into input datasets for use with the <i>Saccharomyces cerevisiae</i> expression neural network model published by <a href="https://doi.org/10.1038/s41467-020-19921-4">Zrimec et al.</a>
+</p>
 
 # Dependencies
 See conda [environment.yml](/preprocessing/environment.yml) file.
@@ -8,7 +13,10 @@ It is assumed that FASTA files and corresponding GFF files have already been ret
 Rename file/directory names in scripts as appropriate.
 
 ### extract_reg_regions.sh
-Where possible for every gene in each genome, extract the four following regulatory regions: 'promoter region' (1000 bp upstream of 5' untranslated region), 5' untranslated region, 3' untranslated region, and 'terminator region' (500 bp downstream of 3' untranslated region). For each genome, outputs four FASTA files (one for each regulatory region). This script uses the [AGAT toolkit](https://github.com/NBISweden/AGAT). 
+Where possible for every gene in each genome, extract the four following regulatory regions: 'promoter region' (1000 bp upstream of 5' untranslated region), 5' untranslated region, 3' untranslated region, and 'terminator region' (500 bp downstream of 3' untranslated region). For each genome, outputs four FASTA files (one for each regulatory region). This script uses the [AGAT toolkit](https://github.com/NBISweden/AGAT). For a clearer explanation see the figure below (reproduced from [Zrimec et al.](https://doi.org/10.1038/s41467-020-19921-4)).
+<p align="center">
+  <img src=https://github.com/akcchi/ascomycota-exp/blob/main/figs/features.png alt="flowchart describing preprocessing steps" width="600">
+</p>
 
 ### fasta_single_line.py
 For all FASTA files, convert all multi-line sequences into single-line sequences. This script uses the [bioinfokit toolkit](https://github.com/reneshbedre/bioinfokit). 
